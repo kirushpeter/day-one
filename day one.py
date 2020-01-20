@@ -71,9 +71,39 @@ print(currentDate.strftime("%d-%b-%Y"))
 """
 
 
+"""
 answer = input("would you like express shipping?")
 
 if answer == "yes":
+
     print("that would be an extra $19")
 
-    
+print("Have a nice day")
+"""
+"""
+# favoriteTeam = input("what is your favourite team? ")
+
+# if favoriteTeam == "senators":
+#     print("whoorayy  ")
+
+"""
+
+deposit = int(input("how much do you want to deposit? "))
+
+if deposit > 100:
+
+    freeToaster = True
+if freeToaster:
+    print("enjoy your toaster")
+
+print("have a nice day!")
+
+
+
+
+
+ 
+
+
+
+   
