@@ -101,6 +101,7 @@ if freeToaster:
 
 print("have a nice day!")
 """
+"""
 shippingFree = False
 totalPurchase = input("enter your total amount of purchase: ")
 
@@ -109,7 +110,8 @@ if totalPurchase > 50:
     
 if shippingFree:
     print("your total cost is" + totalPurchase)
-
+    
+"""
 
 
 
