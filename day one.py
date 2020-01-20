@@ -112,15 +112,28 @@ if shippingFree:
     print("your total cost is" + totalPurchase)
     
 """
-country = input("Where are you from? ")
+"""
+country = input("Where are you from? ").upper()
 
 if country == "CANADA":
     print("hello")
 elif country == "GERMANY":
     print("hello")
-elif country == "japan":
+elif country == "JAPAN":
     print("hello")
+    """
 
+team = input("enter your favourite hockey team: ").upper()
+
+if team == "FLYERS":
+    print("best team ever!!")
+elif team == "SENATORS":
+    print("Go sens go")
+elif team == ("RANGERS"):
+    print("go rangers")
+
+else:
+    print("i dont have anything clever to d=say here")
 
 
 
