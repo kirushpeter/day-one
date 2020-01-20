@@ -87,16 +87,30 @@ print("Have a nice day")
 #     print("whoorayy  ")
 
 """
+"""
+freeToaster = False
 
 deposit = int(input("how much do you want to deposit? "))
 
 if deposit > 100:
 
     freeToaster = True
+
 if freeToaster:
     print("enjoy your toaster")
 
 print("have a nice day!")
+"""
+shippingFree = False
+totalPurchase = input("enter your total amount of purchase: ")
+
+if totalPurchase > 50:
+    shippingFree = True
+    
+if shippingFree:
+    print("your total cost is" + totalPurchase)
+
+
 
 
 
