@@ -112,6 +112,14 @@ if shippingFree:
     print("your total cost is" + totalPurchase)
     
 """
+country = input("Where are you from? ")
+
+if country == "CANADA":
+    print("hello")
+elif country == "GERMANY":
+    print("hello")
+elif country == "japan":
+    print("hello")
 
 
 
