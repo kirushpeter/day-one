@@ -122,25 +122,68 @@ elif country == "GERMANY":
 elif country == "JAPAN":
     print("hello")
     """
-
+"""
 team = input("enter your favourite hockey team: ").upper()
 
-if team == "FLYERS":
-    print("best team ever!!")
-elif team == "SENATORS":
-    print("Go sens go")
-elif team == ("RANGERS"):
-    print("go rangers")
+sport = input("Enter your favourite sport: ").upper()
+
+if sport == "Hockey" and team =="RANGERS":
+
+    print("i miss messier")
 
 else:
-    print("i dont have anything clever to d=say here")
+    print("I don't know that team")
 
+"""
 
+import matplotlib.pyplot as plt
+import re
+from collections import Counter, defaultdict, namedtuple, deque
+from itertools   import chain, cycle, product, islice, count as count_from
+from functools   import lru_cache, total_ordering
+from dataclasses import dataclass
 
+#### CONSTANTS
 
+infinity = float('inf')
+bignum   = 10 ** 100
 
- 
+#### FILE INPUT AND PARSING
 
+def Input(day, line_parser=str.strip, file_template='data/advent2018/input{}.txt'):
+    "For this day's input file, return a tuple of each line parsed by `line_parser`."
+    return mapt(line_parser, open(file_template.format(day)))
 
+def integers(text): 
+    "A tuple of all integers in a string (ignore other characters)."
+    return mapt(int, re.findall(r'-?\d+', text))
 
-   
+#### UTILITY FUNCTIONS
+
+def mapt(fn, *args): 
+    "Do a map, and make the results into a tuple."
+    return tuple(map(fn, *args))
+
+def first(iterable, default=None):
+    "Return first item in iterable, or default."
+    return next(iter(iterable), default)
+
+def nth(iterable, n): return next(islice(iter(iterable), n, n+1))
+
+cat = ''.join
+
+def rangei(start, end, step=1):
+    """Inclusive, range from start to end: rangei(a, b) = range(a, b+1)."""
+    return range(start, end + 1, step) 
+
+def quantify(iterable, pred=bool):
+    "Count how many items in iterable have pred(item) true."
+    return sum(map(pred, iterable))
+
+def multimap(items):
+    "Given (key, val) pairs, return {key: [val, ....], ...}."
+    result = defaultdict(list)
+    for (key, val) in items:
+        result[key].append(val)
+    return result
+    
